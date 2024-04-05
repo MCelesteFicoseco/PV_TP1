@@ -15,7 +15,7 @@ public class Main {
 		d = scanner.nextInt();
 		e = scanner.nextInt();
 		System.out.println("El promedio es: "+(a+b+c+d+e)/5);
-
+		scanner.close();
 	}
 	
 

@@ -14,7 +14,8 @@ public class Main {
 		}else {
 			System.out.println(n*2);
 		}
-
+		
+		scanner.close();
 	}
 
 }
