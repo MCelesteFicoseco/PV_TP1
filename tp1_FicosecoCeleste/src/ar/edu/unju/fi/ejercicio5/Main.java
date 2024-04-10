@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.ejercicio4;
+package ar.edu.unju.fi.ejercicio5;
 
 import java.util.Scanner;
 
@@ -12,17 +12,11 @@ public class Main {
 		do {
 			System.out.println("Ingrese unvalor entero mayor a 0 y menor a 10:");
 			n = scanner.nextInt();
-		}while (n < 0 && n > 10);
+		}while (n < 1 && n >= 10);
 		
-		int f = 1;
-		int c = 1;
-		
-		while (c <= n) {
-			f *= c;
-			c++;
+		for (int i=0; i<=10; i++) {
+			System.out.println(n+"x"+i+"="+(n*i));
 		}
-		
-		System.out.println("Resultado: "+n+"! = "+f);
 		
 		scanner.close();
 	}
