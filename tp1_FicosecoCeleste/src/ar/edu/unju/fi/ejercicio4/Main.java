@@ -12,7 +12,17 @@ public class Main {
 		do {
 			System.out.println("Ingrese unvalor entero mayor a 0 y menot a 10:");
 			n = scanner.nextInt();
-		}while (n >=0 && n<=10);
+		}while (n < 0 && n > 10);
+		
+		int f = 1;
+		int c = 1;
+		
+		while (c <= n) {
+			f *= c;
+			c++;
+		}
+		
+		System.out.println("Resultado: "+n+"! = "+f);
 		
 		scanner.close();
 	}
